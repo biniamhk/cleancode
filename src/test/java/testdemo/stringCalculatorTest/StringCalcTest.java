@@ -23,4 +23,9 @@ public class StringCalcTest {
     void givenAStringWithCustomDelimiterReturnsSum(){
         assertEquals(3,stringCalc.add("//;\n1;2"));
     }
+    @Test
+    void givenAStringWithComplexCustomDelimiterReturnsSum(){
+        assertEquals(100,stringCalc.add("//[**][;]\n10;20,30**40"));
+
+    }
 }

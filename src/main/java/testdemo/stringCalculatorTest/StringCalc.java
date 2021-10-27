@@ -16,6 +16,5 @@ public class StringCalc {
                 .filter(not(String::isEmpty))
                 .mapToInt(Integer::parseInt)
                 .sum();
-
     }
 }
