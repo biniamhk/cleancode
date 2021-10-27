@@ -18,4 +18,9 @@ public class StringCalcTest {
     void givenAStringWithCommaOrNewLineReturnSum(){
         assertEquals(6,stringCalc.add("1\n2,3"));
     }
+
+    @Test
+    void givenAStringWithCustomDelimiterReturnsSum(){
+        assertEquals(3,stringCalc.add("//;\n1;2"));
+    }
 }
